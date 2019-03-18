@@ -5,7 +5,7 @@ cache:
   directories:
   - node_modules
 script:
-  - yarn
+- yarn
 before_install:
 - openssl aes-256-cbc -K $encrypted_aaf2e10e3657_key -iv $encrypted_aaf2e10e3657_iv
   -in deploy_key.enc -out ./deploy_key -d
