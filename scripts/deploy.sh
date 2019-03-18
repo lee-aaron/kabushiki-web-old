@@ -4,5 +4,6 @@ cd kabushiki-web
 git pull
 yarn
 yarn build
+yarn serve
 yarn restart
 EOF
