@@ -1,3 +1,7 @@
+|Build|
+|-----|
+|[![Build Status](https://travis-ci.com/lee-aaron/kabushiki-web.svg?branch=master)](https://travis-ci.com/lee-aaron/kabushiki-web)|
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
