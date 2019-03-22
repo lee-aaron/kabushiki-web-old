@@ -1,0 +1,11 @@
+.Home {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Home h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
