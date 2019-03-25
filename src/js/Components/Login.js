@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { login } from "../../actions/loginAction";
 import store from "../Store/store";
 import { Redirect } from "react-router-dom";
+import "../../css/Login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Login extends Component {
     }
 
     return (
-      <div>
+      <div className="Login">
         <h1>Login!</h1>
         <form onSubmit={this.onSubmit}>
           <div>

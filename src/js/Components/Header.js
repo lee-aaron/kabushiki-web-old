@@ -14,7 +14,7 @@ export default class Header extends Component {
     store.subscribe(() => {
       this.setState({
         isLoggedIn: store.getState().login.isAuthenticated
-      })
+      });
     });
   }
 
@@ -23,28 +23,34 @@ export default class Header extends Component {
     let login = "Login";
     return (
       <nav className="navbar navbar-expand bg-light">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-nav navbar-brand" to="/">
           <div>{name}</div>
         </Link>
-        {this.state.isLoggedIn ? (
-          <Link className="navbar-brand" onClick={() => {
-            store.dispatch({
-              type: LOGOUT
-            });
-          }} to="/">
-            <div>Logout</div>
+        <ul className="navbar-nav ml-auto">
+          {this.state.isLoggedIn ? (
+            <Link
+              className="navbar-nav ml-auto"
+              onClick={() => {
+                store.dispatch({
+                  type: LOGOUT
+                });
+              }}
+              to="/"
+            >
+              <div>Logout</div>
+            </Link>
+          ) : (
+            <Link className="navbar-nav" to="/login">
+              <div>{login}</div>
+            </Link>
+          )}
+          <Link className="navbar-nav" to="/dashboard">
+            <div>Dashboard</div>
           </Link>
-        ) : (
-          <Link className="navbar-brand" to="/login">
-            <div>{login}</div>
+          <Link className="navbar-nav" to="/faq">
+            <div>FAQ</div>
           </Link>
-        )}
-        <Link className="navbar-brand" to="/dashboard">
-          <div>Dashboard</div>
-        </Link>
-        <Link className="navbar-brand" to="/faq">
-          <div>FAQ</div>
-        </Link>
+        </ul>
       </nav>
     );
   }

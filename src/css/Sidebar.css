@@ -1,0 +1,22 @@
+.Sidebar {
+}
+
+.Sidebar ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.sidebar_items {
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: #00ccff;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+.sidebar_items button {
+  margin: 10px;
+}

@@ -1,0 +1,12 @@
+.navbar-nav {
+  flex-direction: row;
+}
+
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
+a {
+  padding: .5rem !important;
+}
